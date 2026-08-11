@@ -519,3 +519,1669 @@ p {
   }
 }
 
+
+/* ==========================================
+   PROFESSIONAL EXPERIENCE SECTION
+========================================== */
+
+.experience-section {
+    position: relative;
+    padding: 100px 0;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* Subtle background glow */
+.experience-section::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 15%;
+    left: -200px;
+    border-radius: 50%;
+    background: rgba(13, 110, 253, 0.08);
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+.experience-section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 5%;
+    right: -180px;
+    border-radius: 50%;
+    background: rgba(13, 110, 253, 0.06);
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.section-heading {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0d6efd;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.section-heading h2 span {
+    color: #0d6efd;
+}
+
+.section-heading p {
+    max-width: 620px;
+    margin: 18px auto 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   EXPERIENCE WRAPPER
+========================================== */
+
+.experience-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   EXPERIENCE CARD
+========================================== */
+
+.experience-card {
+    position: relative;
+    padding: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.4s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(13, 110, 253, 0.35);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35),
+        0 0 40px rgba(13, 110, 253, 0.08);
+}
+
+
+/* ==========================================
+   EXPERIENCE ICON
+========================================== */
+
+.experience-icon {
+    position: absolute;
+    top: -26px;
+    left: 42px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #0a58ca
+    );
+
+    box-shadow:
+        0 10px 30px rgba(13, 110, 253, 0.35);
+
+    font-size: 21px;
+}
+
+.experience-icon i {
+    line-height: 1;
+}
+
+
+/* ==========================================
+   EXPERIENCE HEADER
+========================================== */
+
+.experience-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 8px;
+}
+
+.experience-label {
+    display: inline-block;
+
+    padding: 6px 13px;
+    margin-bottom: 14px;
+
+    border-radius: 50px;
+
+    color: #5fa2ff;
+    background: rgba(13, 110, 253, 0.1);
+
+    border: 1px solid rgba(13, 110, 253, 0.2);
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.experience-title h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(21px, 3vw, 29px);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.experience-title h3 span {
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+}
+
+.experience-title h4 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 12px 0 0;
+
+    color: #0d6efd;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.experience-title h4 i {
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   EXPERIENCE DATE
+========================================== */
+
+.experience-date {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 11px 15px;
+
+    border-radius: 10px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    font-size: 13px;
+}
+
+.experience-date i {
+    color: #0d6efd;
+}
+
+.experience-date small {
+    color: #0d6efd;
+    font-weight: 600;
+    padding-left: 4px;
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.experience-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 30px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13, 110, 253, 0.35),
+            rgba(255, 255, 255, 0.06),
+            transparent
+        );
+}
+
+
+/* ==========================================
+   INTRO
+========================================== */
+
+.experience-intro {
+    max-width: 850px;
+
+    margin: 0 0 30px;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+
+/* ==========================================
+   EXPERIENCE POINTS
+========================================== */
+
+.experience-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.experience-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.experience-point:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(13, 110, 253, 0.25);
+
+    background: rgba(13, 110, 253, 0.045);
+}
+
+
+/* Point Icon */
+
+.point-icon {
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    color: #0d6efd;
+
+    background: rgba(13, 110, 253, 0.1);
+
+    font-size: 15px;
+}
+
+.experience-point h5 {
+    margin: 1px 0 7px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.experience-point p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.57);
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   SKILLS TAGS
+========================================== */
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.experience-skills span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 13px;
+
+    border-radius: 50px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    font-size: 11px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.experience-skills span:hover {
+    color: #ffffff;
+
+    border-color: rgba(13, 110, 253, 0.4);
+
+    background: rgba(13, 110, 253, 0.1);
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   RESPONSIVE — TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .experience-section {
+        padding: 80px 0;
+    }
+
+    .experience-card {
+        padding: 38px 30px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-date {
+        align-self: flex-start;
+    }
+
+    .experience-points {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE — MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .experience-section {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .experience-card {
+        padding: 35px 20px 25px;
+        border-radius: 20px;
+    }
+
+    .experience-icon {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 50px;
+        height: 50px;
+
+        margin-bottom: 25px;
+
+        border-radius: 13px;
+
+        font-size: 18px;
+    }
+
+    .experience-title h3 {
+        font-size: 21px;
+    }
+
+    .experience-title h3 span {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .experience-title h4 {
+        font-size: 14px;
+    }
+
+    .experience-date {
+        width: 100%;
+        justify-content: center;
+
+        font-size: 12px;
+    }
+
+    .experience-divider {
+        margin: 25px 0;
+    }
+
+    .experience-intro {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .experience-point {
+        padding: 17px;
+        gap: 12px;
+    }
+
+    .point-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .experience-point h5 {
+        font-size: 14px;
+    }
+
+    .experience-point p {
+        font-size: 12.5px;
+    }
+
+    .experience-skills {
+        gap: 7px;
+    }
+
+    .experience-skills span {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .experience-section {
+        padding: 60px 0;
+    }
+
+    .experience-card {
+        padding: 30px 16px 22px;
+    }
+
+    .experience-title h3 {
+        font-size: 19px;
+    }
+
+    .experience-title h4 {
+        font-size: 13px;
+    }
+
+    .experience-point {
+        padding: 15px;
+    }
+
+    .experience-point p {
+        font-size: 12px;
+    }
+
+    .experience-date {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+/* ==========================================
+   CREATIVE & PROFESSIONAL SKILLS SECTION
+========================================== */
+
+.creative-skills-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+/* Background Glow */
+
+.creative-skills-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    left: -220px;
+    top: 15%;
+    border-radius: 50%;
+    background: rgba(13, 110, 253, 0.07);
+    filter: blur(110px);
+    pointer-events: none;
+}
+
+.creative-skills-section::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    right: -200px;
+    bottom: 5%;
+    border-radius: 50%;
+    background: rgba(13, 110, 253, 0.06);
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.creative-skills-section .section-heading {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 0 auto 60px;
+}
+
+.creative-skills-section .section-subtitle {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: #0d6efd;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.creative-skills-section .section-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.creative-skills-section .section-heading h2 span {
+    color: #0d6efd;
+}
+
+.creative-skills-section .section-heading p {
+    max-width: 650px;
+    margin: 18px auto 0;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   MAIN GRID
+========================================== */
+
+.creative-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   COMMON CARD
+========================================== */
+
+.creative-card {
+    padding: 32px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.012)
+        );
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.creative-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(13, 110, 253, 0.3);
+
+    box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.3),
+        0 0 35px rgba(13, 110, 253, 0.07);
+}
+
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.creative-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.creative-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d6efd,
+            #0a58ca
+        );
+
+    box-shadow:
+        0 10px 25px rgba(13, 110, 253, 0.25);
+
+    font-size: 19px;
+}
+
+.card-small-title {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #0d6efd;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.creative-card-header h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.creative-card-header h3 span {
+    color: #0d6efd;
+}
+
+
+/* ==========================================
+   AI CONTENT LIST
+========================================== */
+
+.creative-content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.creative-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    padding: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.055);
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    transition: all 0.3s ease;
+}
+
+.creative-item:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(13, 110, 253, 0.25);
+
+    background: rgba(13, 110, 253, 0.045);
+}
+
+.creative-item-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: #0d6efd;
+
+    background: rgba(13, 110, 253, 0.1);
+
+    font-size: 14px;
+}
+
+.creative-item h4 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.creative-item p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================
+   PROFESSIONAL STRENGTHS
+========================================== */
+
+.strengths-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.strength-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 16px 4px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.strength-item:first-child {
+    padding-top: 3px;
+}
+
+.strength-item:last-child {
+    border-bottom: none;
+}
+
+.strength-item:hover {
+    padding-left: 7px;
+}
+
+.strength-number {
+    width: 30px;
+
+    flex-shrink: 0;
+
+    color: #0d6efd;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.strength-text {
+    flex: 1;
+}
+
+.strength-text h4 {
+    margin: 0 0 4px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.strength-text p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.48);
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.strength-item > i {
+    color: rgba(255, 255, 255, 0.25);
+
+    font-size: 11px;
+
+    transition: all 0.3s ease;
+}
+
+.strength-item:hover > i {
+    color: #0d6efd;
+    transform: translate(2px, -2px);
+}
+
+
+/* ==========================================
+   AVAILABILITY CARD
+========================================== */
+
+.availability-card {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 25px auto 0;
+    padding: 30px 32px;
+
+    border: 1px solid rgba(13, 110, 253, 0.18);
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(13, 110, 253, 0.07),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.availability-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    color: #ffffff;
+
+    background: rgba(13, 110, 253, 0.13);
+
+    border: 1px solid rgba(13, 110, 253, 0.2);
+
+    font-size: 19px;
+}
+
+.availability-content {
+    flex: 1;
+}
+
+.availability-content > span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #0d6efd;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.availability-content h3 {
+    margin: 0 0 9px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.availability-content h3 strong {
+    color: #0d6efd;
+}
+
+.availability-content > p {
+    max-width: 850px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.57);
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   AVAILABILITY TAGS
+========================================== */
+
+.availability-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+.availability-tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    border-radius: 50px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    font-size: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.availability-tags span i {
+    color: #0d6efd;
+}
+
+.availability-tags span:hover {
+    color: #ffffff;
+
+    border-color: rgba(13, 110, 253, 0.3);
+
+    background: rgba(13, 110, 253, 0.08);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .creative-skills-section {
+        padding: 80px 0;
+    }
+
+    .creative-grid {
+        grid-template-columns: 1fr;
+        max-width: 750px;
+    }
+
+    .availability-card {
+        max-width: 750px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .creative-skills-section {
+        padding: 70px 0;
+    }
+
+    .creative-skills-section .section-heading {
+        margin-bottom: 45px;
+        padding: 0 15px;
+    }
+
+    .creative-skills-section .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .creative-skills-section .section-heading p {
+        font-size: 13px;
+    }
+
+    .creative-card {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .creative-card-header {
+        gap: 12px;
+        margin-bottom: 23px;
+    }
+
+    .creative-icon {
+        width: 46px;
+        height: 46px;
+
+        border-radius: 12px;
+
+        font-size: 16px;
+    }
+
+    .creative-card-header h3 {
+        font-size: 20px;
+    }
+
+    .creative-item {
+        padding: 14px;
+        gap: 11px;
+    }
+
+    .creative-item-icon {
+        width: 35px;
+        height: 35px;
+
+        font-size: 12px;
+    }
+
+    .creative-item h4 {
+        font-size: 13px;
+    }
+
+    .creative-item p {
+        font-size: 11.5px;
+    }
+
+    .strength-item {
+        padding: 14px 2px;
+        gap: 10px;
+    }
+
+    .strength-number {
+        width: 26px;
+        font-size: 9px;
+    }
+
+    .strength-text h4 {
+        font-size: 12px;
+    }
+
+    .strength-text p {
+        font-size: 10.5px;
+    }
+
+    .availability-card {
+        flex-direction: column;
+        gap: 18px;
+
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .availability-icon {
+        width: 47px;
+        height: 47px;
+
+        border-radius: 12px;
+
+        font-size: 16px;
+    }
+
+    .availability-content h3 {
+        font-size: 20px;
+    }
+
+    .availability-content > p {
+        font-size: 12px;
+    }
+
+    .availability-tags {
+        gap: 6px;
+    }
+
+    .availability-tags span {
+        font-size: 9.5px;
+        padding: 6px 9px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .creative-skills-section {
+        padding: 60px 0;
+    }
+
+    .creative-card {
+        padding: 21px 15px;
+    }
+
+    .creative-card-header h3 {
+        font-size: 18px;
+    }
+
+    .creative-item {
+        padding: 13px;
+    }
+
+    .creative-item p {
+        font-size: 11px;
+    }
+
+    .availability-card {
+        padding: 21px 15px;
+    }
+
+    .availability-content h3 {
+        font-size: 18px;
+    }
+}
+
+/* ==========================================
+   AI & CREATIVE SKILLS SECTION
+========================================== */
+
+.ai-creative-section {
+    position: relative;
+    padding: 90px 0 100px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            rgba(0, 115, 255, 0.08),
+            transparent 35%
+        ),
+        #020b14;
+}
+
+
+/* Subtle Background Glow */
+
+.ai-creative-section::before {
+    content: "";
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -180px;
+    right: -120px;
+
+    background: rgba(0, 153, 255, 0.08);
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.ai-section-heading {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.ai-section-heading span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #1688ff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.ai-section-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* ==========================================
+   SKILLS GRID
+========================================== */
+
+.ai-skills-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 24px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   SKILL CARD
+========================================== */
+
+.ai-skill-card {
+    position: relative;
+
+    min-height: 195px;
+
+    padding: 30px 25px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #202d43,
+            #1b273a
+        );
+
+    border: 1px solid rgba(140, 170, 205, 0.20);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Card Hover */
+
+.ai-skill-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(255, 255, 255, 0.22);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.ai-skill-icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.ai-skill-card:hover .ai-skill-icon {
+    transform: scale(1.08);
+}
+
+
+/* Individual Icon Colors */
+
+.video-icon {
+    color: #ff5733;
+}
+
+.image-icon {
+    color: #2f6df6;
+}
+
+.script-icon {
+    color: #ffdc00;
+}
+
+.prompt-icon {
+    color: #a66bea;
+}
+
+.social-icon {
+    color: #19bfff;
+}
+
+.poster-icon {
+    color: #ff66c4;
+}
+
+.editing-icon {
+    color: #ff8a3d;
+}
+
+.reels-icon {
+    color: #00d4ff;
+}
+
+
+/* ==========================================
+   SKILL TITLE
+========================================== */
+
+.ai-skill-card h3 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* ==========================================
+   PROGRESS BAR
+========================================== */
+
+.ai-progress {
+    width: 100%;
+    height: 6px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #142033;
+}
+
+
+/* Progress Fill */
+
+.ai-progress-fill {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    border-radius: inherit;
+
+    transition:
+        width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Individual Progress Colors */
+
+.ai-skill-card:nth-child(1)
+.ai-progress-fill {
+    background: #ff5733;
+}
+
+.ai-skill-card:nth-child(2)
+.ai-progress-fill {
+    background: #2878ff;
+}
+
+.ai-skill-card:nth-child(3)
+.ai-progress-fill {
+    background: #ffe500;
+}
+
+.ai-skill-card:nth-child(4)
+.ai-progress-fill {
+    background: #8d56cc;
+}
+
+.ai-skill-card:nth-child(5)
+.ai-progress-fill {
+    background: #18b9ed;
+}
+
+.ai-skill-card:nth-child(6)
+.ai-progress-fill {
+    background: #ff58bd;
+}
+
+.ai-skill-card:nth-child(7)
+.ai-progress-fill {
+    background: #ff8a3d;
+}
+
+.ai-skill-card:nth-child(8)
+.ai-progress-fill {
+    background: #00c8ee;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .ai-skills-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        max-width: 760px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .ai-creative-section {
+        padding: 70px 15px 75px;
+    }
+
+    .ai-section-heading {
+        margin-bottom: 38px;
+    }
+
+    .ai-section-heading span {
+        font-size: 12px;
+    }
+
+    .ai-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .ai-skills-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+        max-width: 450px;
+    }
+
+    .ai-skill-card {
+        min-height: 175px;
+
+        padding: 27px 22px 23px;
+    }
+
+    .ai-skill-icon {
+        width: 52px;
+        height: 52px;
+
+        font-size: 29px;
+
+        margin-bottom: 15px;
+    }
+
+    .ai-skill-card h3 {
+        font-size: 14px;
+
+        margin-bottom: 16px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+
+    .ai-creative-section {
+        padding: 60px 12px 65px;
+    }
+
+    .ai-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .ai-skill-card {
+        min-height: 165px;
+
+        padding: 24px 18px 20px;
+    }
+
+}
+
